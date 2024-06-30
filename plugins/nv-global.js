@@ -494,6 +494,89 @@ handler.all = async function(m, {conn}) {
     mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
   }
 
+
+
+
+  if (!chat.isBanned && m.text.match(/(лови)/gi)) {
+    if (!db.data.chats[m.chat].audios) return;
+    if (!db.data.settings[mconn.conn.user.jid].audios_bot && !m.isGroup) return;
+    const vn = './media/лови.mp3';
+    mconn.conn.sendPresenceUpdate('recording', m.chat);
+    mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
+  }
+
+  if (!chat.isBanned && m.text.match(/(частушка)/gi)) {
+    if (!db.data.chats[m.chat].audios) return;
+    if (!db.data.settings[mconn.conn.user.jid].audios_bot && !m.isGroup) return;
+    const vn = './media/частушка.mp3';
+    mconn.conn.sendPresenceUpdate('recording', m.chat);
+    mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
+  }
+
+  if (!chat.isBanned && m.text.match(/(частушка2)/gi)) {
+    if (!db.data.chats[m.chat].audios) return;
+    if (!db.data.settings[mconn.conn.user.jid].audios_bot && !m.isGroup) return;
+    const vn = './media/частушка2.mp3';
+    mconn.conn.sendPresenceUpdate('recording', m.chat);
+    mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
+  }
+
+  if (!chat.isBanned && m.text.match(/(зло)/gi)) {
+    if (!db.data.chats[m.chat].audios) return;
+    if (!db.data.settings[mconn.conn.user.jid].audios_bot && !m.isGroup) return;
+    const vn = './media/зло.mp3';
+    mconn.conn.sendPresenceUpdate('recording', m.chat);
+    mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
+  }
+
+  if (!chat.isBanned && m.text.match(/(здрасти)/gi)) {
+    if (!db.data.chats[m.chat].audios) return;
+    if (!db.data.settings[mconn.conn.user.jid].audios_bot && !m.isGroup) return;
+    const vn = './media/здрасти.mp3';
+    mconn.conn.sendPresenceUpdate('recording', m.chat);
+    mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
+  }
+
+  if (!chat.isBanned && m.text.match(/(тихо)/gi)) {
+    if (!db.data.chats[m.chat].audios) return;
+    if (!db.data.settings[mconn.conn.user.jid].audios_bot && !m.isGroup) return;
+    const vn = './media/тихо.mp3';
+    mconn.conn.sendPresenceUpdate('recording', m.chat);
+    mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
+  }
+
+  if (!chat.isBanned && m.text.match(/(достал)/gi)) {
+    if (!db.data.chats[m.chat].audios) return;
+    if (!db.data.settings[mconn.conn.user.jid].audios_bot && !m.isGroup) return;
+    const vn = './media/достал.mp3';
+    mconn.conn.sendPresenceUpdate('recording', m.chat);
+    mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
+  }
+
+  if (!chat.isBanned && m.text.match(/(володя)/gi)) {
+    if (!db.data.chats[m.chat].audios) return;
+    if (!db.data.settings[mconn.conn.user.jid].audios_bot && !m.isGroup) return;
+    const vn = './media/володя.mp3';
+    mconn.conn.sendPresenceUpdate('recording', m.chat);
+    mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
+  }
+
+  if (!chat.isBanned && m.text.match(/(реклама)/gi)) {
+    if (!db.data.chats[m.chat].audios) return;
+    if (!db.data.settings[mconn.conn.user.jid].audios_bot && !m.isGroup) return;
+    const vn = './media/реклама.mp3';
+    mconn.conn.sendPresenceUpdate('recording', m.chat);
+    mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
+  }
+
+  if (!chat.isBanned && m.text.match(/(ночь)/gi)) {
+    if (!db.data.chats[m.chat].audios) return;
+    if (!db.data.settings[mconn.conn.user.jid].audios_bot && !m.isGroup) return;
+    const vn = './media/ночь.mp3';
+    mconn.conn.sendPresenceUpdate('recording', m.chat);
+    mconn.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
+  }
+
   return !0;
 };
 export default handler;
