@@ -35,10 +35,11 @@ _*Венька*_ поддерживает общение, скидывает г�
 ╚════════
 
 
+
 `);
 };
-handler.customPrefix = /з|@/i;
+handler.customPrefix = /а|@/i;
 handler.tags = ['anonymous'];
-handler.command = ['аказать'];
+handler.command = ['ренда'];
 handler.private = true;
 export default handler;

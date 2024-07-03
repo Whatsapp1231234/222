@@ -15,19 +15,6 @@ ${tradutor.texto1[3]}
 
 --------------------------------
 
-${tradutor.texto2[0]} | PUBLIC
-${tradutor.texto2[1]}* ${usedPrefix + command} public
-${tradutor.texto2[2]}
-${tradutor.texto2[3]}
-
---------------------------------
-
-${tradutor.texto3[0]} | MODOHORNY
-${tradutor.texto3[1]} ${usedPrefix + command} modohorny
-${tradutor.texto3[2]}
-
---------------------------------
-
 ${tradutor.texto4[0]} | АНТИССЫЛКА
 ${tradutor.texto4[1]} ${usedPrefix + command} антиссылка
 ${tradutor.texto4[2]}
@@ -42,29 +29,10 @@ ${tradutor.texto5[3]}
 
 --------------------------------
 
-${tradutor.texto6[0]} | DETECT
-${tradutor.texto6[1]} ${usedPrefix + command} detect
-${tradutor.texto6[2]}
-
---------------------------------
-
-${tradutor.texto7[0]} | DETECT 2
-${tradutor.texto7[1]} ${usedPrefix + command} detect2
-${tradutor.texto7[2]}
-
---------------------------------
-
 ${tradutor.texto8[0]} ОГРАНИЧИТЬ
 ${tradutor.texto8[1]} ${usedPrefix + command} ограничить
 ${tradutor.texto8[2]}
 ${tradutor.texto8[3]}
---------------------------------
-
-${tradutor.texto9[0]} | AUTOREAD
-${tradutor.texto9[1]} ${usedPrefix + command} autoread
-${tradutor.texto9[2]}
-${tradutor.texto9[3]}
-
 --------------------------------
 
 ${tradutor.texto10[0]} | АУДИО
@@ -76,47 +44,6 @@ ${tradutor.texto10[2]}
 ${tradutor.texto11[0]} | АВТОСТИКЕР
 ${tradutor.texto11[1]} ${usedPrefix + command} автостикер 
 ${tradutor.texto11[2]}
-
---------------------------------
-
-${tradutor.texto12[0]} | PCONLY
-${tradutor.texto12[1]} ${usedPrefix + command} pconly
-${tradutor.texto12[2]}
-${tradutor.texto12[3]}
-
---------------------------------
-
-${tradutor.texto13[0]} | GCONLY
-${tradutor.texto13[1]} ${usedPrefix + command} gconly
-${tradutor.texto13[2]} 
-${tradutor.texto13[3]}
-
---------------------------------
-
-${tradutor.texto14[0]} | ANTIVIEWONCE 
-${tradutor.texto14[1]} ${usedPrefix + command} antiviewonce
-${tradutor.texto14[2]}
-
---------------------------------
-
-${tradutor.texto15[0]} | ANTILLAMADAS
-${tradutor.texto15[1]} ${usedPrefix + command} anticall
-${tradutor.texto15[2]} 
-${tradutor.texto15[3]}
-
---------------------------------
-
-${tradutor.texto16[0]} | ANTITOXIC
-${tradutor.texto16[1]} ${usedPrefix + command} antitoxic
-${tradutor.texto16[2]}
-${tradutor.texto16[3]}
-
---------------------------------
-
-${tradutor.texto17[0]} | ANTITRABAS
-${tradutor.texto17[1]}  ${usedPrefix + command} antitraba
-${tradutor.texto17[2]} 
-${tradutor.texto17[3]} 
 
 --------------------------------
 
@@ -134,28 +61,9 @@ ${tradutor.texto19[3]}
 
 --------------------------------
 
-${tradutor.texto20[0]} | MODOADMIN
-${tradutor.texto20[1]} ${usedPrefix + command} modoadmin
-${tradutor.texto20[2]}
-
---------------------------------
-
-${tradutor.texto21[0]} | SIMSIMI
-${tradutor.texto21[1]} ${usedPrefix + command} simsimi
-${tradutor.texto21[2]}
-
---------------------------------
-
 ${tradutor.texto22[0]} | АНТИУДАЛЕНИЕ
 ${tradutor.texto22[1]} ${usedPrefix + command} антиудаление
 ${tradutor.texto22[2]}
-
---------------------------------
-
-${tradutor.texto23[0]} | AUDIOS_BOT
-${tradutor.texto23[1]} ${usedPrefix + command} audios_bot
-${tradutor.texto23[2]}
-${tradutor.texto23[3]}
 
 --------------------------------
 
@@ -469,7 +377,7 @@ break;
       if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, {text: optionsFull}, {quoted: m});
       throw false;
   }
-  conn.sendMessage(m.chat, {text: `_*${tradutor.texto28[0]}*_\n\n*${tradutor.texto28[1]}* _${type}_ *fue* ${isEnable ? '_activada_' : '_desactivada_'} *${tradutor.texto28[2]}* ${isAll ? '_bot._' : isUser ? '' : '_chat._'}`}, {quoted: m});
+  conn.sendMessage(m.chat, {text: `_*${tradutor.texto28[0]}*_\n\n*${tradutor.texto28[1]}* _${type}_  ${isEnable ? '✅' : '❎'} *${tradutor.texto28[2]}* ${isAll ? 'бота' : isUser ? '' : 'чата'}`}, {quoted: m});
   //conn.sendMessage(m.chat, {text: `▢ *Opción:* ${type}\n\n▢ *Estado:* ${isEnable ? 'Activado' : 'Desactivado'}\n\n▢ *Para* ${isAll ? 'este bot' : isUser ? '' : 'este chat'}`}, {quoted: m});
 };
 handler.command = /^((вк|вык)лючить|(tru|fals)e|(turn)?[01])$/i;
